@@ -10,6 +10,13 @@ Web app for new developers to track daily progress - including what they worked 
 ## Frontend Setup (Vue.js)
 See frontend/README.md
 
+## Data Model
+- **user_id** *(String, Partition Key)* - Unique ID for each user
+- **date** *(String, Sort Key)* - Date of the log entry
+- **worked_on** *(String)* - What the user worked on
+- **learned** *(String)* - What the user learned
+- **stuck_on** *(String)* - Issues or blockers
+
 ## Team Members
 - Allison Coates
 - Mai Nguyen
