@@ -32,8 +32,9 @@ Prerequisites
 Running the Frontend
 1. Clone or Download the repository
 2. Open a terminal in the project root
-3. Install dependencies:
+3. Go to the Frontend folder and install dependencies:
 ```
+cd frontend
 npm install
 ```
 4. Start the development server:
