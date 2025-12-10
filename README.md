@@ -19,6 +19,7 @@ Web app for new developers to track daily progress - including what they worked 
 - **DynamoDB:** NoSQL database table (DevGrowth)
 
 ## Data Model
+Table Name: DevGrowth
 - **user_id** *(String, Partition Key)* - Unique ID for each user
 - **date** *(String, Sort Key)* - Date of the log entry
 - **worked_on** *(String)* - What the user worked on
