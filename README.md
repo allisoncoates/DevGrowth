@@ -27,6 +27,13 @@ Table Name: DevGrowth
 - **stuck_on** *(String)* - Issues or blockers
 
 ## Setup & Installation
+As of 12/11/2025, the AWS cloud services have been turned off. In order to run this app:
+- Set up a database in DynamoDB using the Data Model section above
+- Set up Lambdas with Python 3.12 using the get.py, add.py, update.py, and delete.py files in the backend folder
+  - Ensure each Lambda’s IAM role has permission to the AmazonDynamoDBFullAccess policy
+- Set up an API Gateway with GET, POST, PUT, and DELETE /entries routes and integrate each route with the respective Lambda
+- Get the API’s Invoke URL and add it to the frontend files App.vue, NewEntry.vue, and PastEntries.vue in the API_URL variable
+
 Prerequisites
 - Node.js installed (v18+ recommended)
 
